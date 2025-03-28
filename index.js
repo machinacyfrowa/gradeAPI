@@ -23,7 +23,7 @@ app.get('/grades/:student_id/', async (req, res) => {
     const result = await client.query(query);
     console.log("Query Result:");
     console.table(result.rows);
-    res.end();
+    res.send(result.rows);
 });
 app.post('/grades/:student_id/', async (req, res) => {
     const studentId = req.params.student_id;
