@@ -10,11 +10,13 @@ app.get('/', (req, res) => {
 app.get('/grades/:student_id/', (req, res) => {
     const studentId = req.params.student_id;
     console.log("Student ID:", studentId);
+    res.end();
 });
 app.post('/grades/:student_id/', (req, res) => {
     const studentId = req.params.student_id;
     console.log("Student ID:", studentId);
     console.log("Request Body:", req.body);
+    res.end();
 });
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
