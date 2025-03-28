@@ -1,0 +1,14 @@
+{
+  "name": "gradeapi",
+  "version": "1.0.0",
+  "description": "API do wystawiania i przeglądania ocen",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Paweł Zawadzki",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
